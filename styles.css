@@ -12,7 +12,22 @@ ul {
     padding: 0;
 }
 
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
 
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_bold.woff);
+   font-weight: bold;
+}
+
+.timelineText {
+font-size: 10px;
+    padding: 6px;
+font-family: monospace;
+}
 .about-main {
     display: flex;
     flex-direction: column;
@@ -51,7 +66,7 @@ ul {
 }
 
 .about-main-pic-lastname {
-    color: #f3b700;
+    color: darkmagenta;
 }
 
 .about-main-links {
@@ -110,7 +125,6 @@ a {
 }
 
 .section-title-main-max {
-
         max-width: 1700px;
         width: 100%;
 }
@@ -122,13 +136,17 @@ a {
 }
 
 .section-title-main-max-content-title {
+    font-family: Kokonor;
+
     font-weight: 600;
     padding-bottom: 5px;
+    
 }
 
 @media only screen and (max-width: 1100px) {
 h1 {
     font-size: 32px;
+    font-family: myFirstFont;
 }
 }
 
@@ -139,15 +157,16 @@ h1 {
 }
 
 .rounded-card {
-    border-radius: 30px;
-    background: var(--primaryColor);
     animation-name: popOut;
     transform: scale(1);
     animation-duration: .5s;
     animation-timing-function: cubic-bezier(.165,.84,.44,1);
     animation-delay: 0s;
     animation-fill-mode: forwards;
-    box-shadow: 3px 3px 12px var(--primaryColorDarkerShadow),-3px -3px 12px var(--primaryColorLighterShadow);
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
+    background-image: linear-gradient(to top, aqua 0%, #fff 80%, #FDFDFD 100%, aqua 10%);
+border-radius: 30px;
+border: 1px solid cornsilk;
 }
 
 .aboutme-main {
@@ -395,8 +414,8 @@ img {
 .experienceItem-timelineCircle {
     position: absolute;
     margin-top: 25px;
-    height: 30px;
-    width: 30px;
+    height: auto;
+    width: auto;
     border-radius: 15px!important;
     z-index: 1;
 }
@@ -456,9 +475,19 @@ img {
 }
 
 .experienceItem-contentLogoNameNameJob {
-    padding-left: 20px;
+    padding-left : 20px;
     display: flex;
     flex-direction: column;
+} 
+
+p {
+margin : 0;
+
+}
+
+.main-name {
+
+margin-top: 20px;
 }
 
 .experienceItem-contentLogoNameName {
