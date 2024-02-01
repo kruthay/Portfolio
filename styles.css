@@ -237,6 +237,12 @@ object {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.appProjectCard-main:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.01);
+  }
+
 @media only screen and (max-width: 1600px) {
 .appProjectCard-main {
     width: 92vw;
@@ -314,6 +320,7 @@ img {
     padding-top: 20px;
     font-weight: 700;
     font-size: 24px;
+    line-height: 25px;
 }
 
 
@@ -509,3 +516,51 @@ margin-top: 20px;
     padding-bottom: 80px;
     white-space: pre-line;
 }
+
+.small-app-projects-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.small-app-projects-main {
+    align-items: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .small-app-projects-main {
+        flex-direction: column;
+    }
+    }
+
+.smallProjectCard-main {
+    flex: 1 1;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+  }
+
+  .smallProjectCard-main:hover {
+    transform: scale(1.05);
+  }
+
+  .smallProjectCard-description {
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .smallProjectCard-description a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
